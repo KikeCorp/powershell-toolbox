@@ -1,0 +1,23 @@
+# PowerShell temporary files
+*.tmp
+*.temp
+*.bak
+*.log
+
+# PowerShell module analysis cache
+*.analysis.xml
+
+# Editor and IDE files
+.vscode/
+.idea/
+
+# Windows files
+Thumbs.db
+Desktop.ini
+
+# macOS files
+.DS_Store
+
+# Temporary directories
+Temp/
+tmp/
