@@ -2,35 +2,42 @@
 
 PowerShell scripts for Exchange Online administration and reporting.
 
-## Get-ExchangeMailboxInventory.ps1
+## Scripts available
 
-### Description
+### [Get-ExchangeMailboxInventory.ps1](./Get-ExchangeMailboxInventory.ps1)
 
-Retrieves mailbox information from Exchange Online and exports
-the inventory to a CSV file.
+Retrieves mailbox information from Exchange Online and exports the inventory to a CSV file.
 
-### Requirements
+#### Requirements
 
 - PowerShell 7 or later.
 - ExchangeOnlineManagement module.
 - Active Exchange Online connection.
 
-### Usage
+#### Usage
 
 Connect to Exchange Online:
 
 ```powershell
 Connect-ExchangeOnline
+```
 
 Run the script:
-.\Get-ExchangeMailboxInventory.ps1
 
-Specify an output file:
+```powershell
 .\Get-ExchangeMailboxInventory.ps1
 ```
 
-### Output
+Specify an output file:
+
+```powershell
+.\Get-ExchangeMailboxInventory.ps1 -OutputPath "C:\Reports\Mailboxes.csv"
+```
+
+#### Output
+
 A CSV file containing:
+
 - DisplayName
 - UserPrincipalName
 - PrimarySmtpAddress
